@@ -28,7 +28,14 @@ li{
     top: 0;
     left: 0;
     height: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
+
+#sidebar::-webkit-scrollbar{
+    display: none;
+}
+
 
 #sidebar .brand{
     font-size: 24px;
@@ -69,7 +76,7 @@ li{
     border-radius: 10px;
     margin: 4px 0;
     grid-gap: 6px;
-    transition: all .3s ease;
+    transition: all .15s ease;
 }
 
 #sidebar .side-menu a:hover{
@@ -88,5 +95,10 @@ li{
     padding-left: 20px;
     max-height: 0;
     overflow-y: hidden;
-    transition: all .15s ease;
+    transition: all .10s ease-in-out;
+}
+
+#sidebar .side-dropdown.show{
+    max-height: 1000px;
+    overflow-y: visible;
 }

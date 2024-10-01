@@ -11,6 +11,7 @@
     <title>Sistema Comercial</title>
 </head>
 <body>
+    <!-- < Sidebar -->
     <section id="sidebar">
         <a href="#" class="brand"><i class='bx bxs-user-pin'></i> Administrador</a>
         <ul class="side-menu">
@@ -37,6 +38,11 @@
             </li>
         </ul>
     </section>
+    <!-- / Sidebar > -->
+
+    <!-- Navbar -->
+
+
     <script src="https://kit.fontawesome.com/591b1de1f6.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="./assets/js/index.js"></script>
