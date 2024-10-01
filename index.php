@@ -21,7 +21,7 @@
             <li>
                 <a href="#"><i class='bx bx-store-alt' ></i> Productos <i class='bx bx-right-arrow-alt'></i></a>
                 <ul class="side-dropdown">
-                    <li><a href="">Pan Bimbo</a></li>
+                    <li><a href="">Pan</a></li>
                     <li><a href="">Pan Hamburgesa</a></li>
                     <li><a href="">Pan Pancho</a></li>
                     <li><a href="">Papas Quento</a></li>
@@ -129,6 +129,11 @@
         <section class="content-grafic">
                 <?php require_once "./grafica.php"?>
         </section>
+
+        <footer class='autor-copyright'>
+            <div class='bar'></div>
+            <p>&copy;<b> Sistema Comercial / Nahuel Alexander Coronel</b></p>
+        </footer>
 
     </section>
 

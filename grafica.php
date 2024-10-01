@@ -27,6 +27,6 @@
     </script>
   </head>
   <body>
-    <div id="chart_div" style="width: 100%; min-height: 400px;"></div>
+    <div id="chart_div" style="width: 100%; min-height: 350px;"></div>
   </body>
 </html>
