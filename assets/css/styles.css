@@ -21,6 +21,8 @@ li{
 }
 
 
+/* Sidebar STYLES */
+
 #sidebar{
     position: fixed;
     width: 260px;
@@ -44,7 +46,7 @@ li{
     align-items: center;
     height: 64px;
     font-weight: 700;
-    color: #0075fa;
+    color: #0085f9;
 }
 
 #sidebar .bx-store-alt, #sidebar .bxs-dashboard,#sidebar .bx-right-arrow-alt{
@@ -63,7 +65,7 @@ li{
 }
 
 #sidebar .side-menu{
-    margin: 36px 0;
+    margin: 10px 0;
     padding: 0 26px;
 }
 
@@ -89,6 +91,7 @@ li{
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 700;
+    color: #7a7979;
 }
 
 #sidebar .side-dropdown{
@@ -101,4 +104,226 @@ li{
 #sidebar .side-dropdown.show{
     max-height: 1000px;
     overflow-y: visible;
+}
+
+/* Navbar and Content section STYLES */
+
+#content{
+    position: relative;
+    width: calc(100% - 260px);
+    left: 260px;
+}
+
+
+/* navbar */
+
+nav{
+    background-color: #ffffff;
+    height: 64px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .toggle-sidebar{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav form{
+    max-width: 400px;
+    width: 100%;
+}
+
+nav .form-group{
+    position: relative;
+}
+
+nav .form-group .bx-search{
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%);
+    right: 10px;
+}
+
+nav .form-group input{
+    width: 100%;
+    background-color: #ebe6e6;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px 36px 10px 16px;
+}
+
+nav .nav-link{
+    position: relative;
+}
+
+nav .nav-link .icon{
+    font-size: 18px;
+    color: black;
+}
+
+nav .nav-link .badge{
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    padding: 2px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(238, 237, 237);
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1ecec;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.profile{
+    display: flex;
+}
+
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* card styles */
+
+.section-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.section-cards h3{
+    font-size: 30px;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 80px;
+}
+
+.content-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background-color: #ffffff;
+    padding: 10px 50px;
+    margin: 10px;
+    width: 345px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card span i{
+    font-size: 18px;
+}
+
+.card span{
+    color: rgb(144, 143, 143);
+}
+
+.card:nth-child(1){
+    box-shadow: 0 5px 0px #0798ff;
+}
+.card:nth-child(2){
+    box-shadow: 0 5px 0px #31a614;
+}
+.card:nth-child(3){
+    box-shadow: 0 5px 0px #fc8700;
+}
+.card:nth-child(4){
+    box-shadow: 0 5px 0px #8e00fa;
+}
+
+.card-content{
+    font-size: 20px;
+}
+
+.card-content i{
+    font-size: 30px;
+    text-align: center;
+}
+
+.icon-x{
+    color: #31a614;
+}
+.icon-v{
+    color: #0798ff;
+}
+.icon-p{
+    color: #fc8700;
+}
+
+.icon-b{
+    color: #8e00fa;
+}
+
+
+/* content orders */
+
+.content-orders{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 100px;
+    padding: 20px;
+    background-color: white;
+}
+
+.orders-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.box-orders h4{
+    color: #797878;
+}
+
+.orders-content p{
+    background-color: #212221;
+    padding: 5px;
+    color: white;
+    margin: 10px 10px 10px 0px;
+}
+
+.orders-content span{
+    background-color: #006dfa;
+    padding: 5px;
+    margin: 10px 10px 10px 0px;
+    color: white;
+}
+
+.box-orders a{
+    background-color: #006dfa;
+    padding: 10px;
+    color: white;
+}
+
+
+/* grafica del inicio */
+
+.content-grafic{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 100px;
 }

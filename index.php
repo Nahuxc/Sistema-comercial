@@ -15,7 +15,7 @@
     <section id="sidebar">
         <a href="#" class="brand"><i class='bx bxs-user-pin'></i> Administrador</a>
         <ul class="side-menu">
-            <li><a href="#"><i class='bx bxs-dashboard'></i> Inicio</a></li>
+            <li><a href="index.php"><i class='bx bxs-dashboard'></i> Inicio</a></li>
             <li class="divider"><i class="fa-solid fa-house"></i> Gestor</li>
             <li><a href="#"><i class="fa-solid fa-users"></i> Clientes</a></li>
             <li>
@@ -40,8 +40,97 @@
     </section>
     <!-- / Sidebar > -->
 
-    <!-- Navbar -->
+    <!-- Navbar and Content section -->
+    <section id="content">
+        <nav>
+            <i class="bx bx-menu toggle-sidebar"></i>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" placeholder="Buscar..." name="search">
+                    <i class="bx bx-search"></i>
+                </div>
+            </form>
+            <a href="#" class="nav-link">
+                <i class="bx bxs-bell icon"></i>
+                <span class="badge">0</span>
+            </a>
+            <span class="divider"></span>
+            <div class="profile">
+                <img class="profile-img" src="./assets/img/chico.png" alt="foto-perfil">
+                <ul class="profile-link">
+                    <li><a href="#"><i class="bx bxs-user-circle icon"></i> Perfil</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i> Configuracion</a></li>
+                    <li><a href="#"><i class="fa-solid fa-power-off"></i> Cerrar Sesion</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="section-cards">
+            <h3><i class='bx bxs-dashboard'></i> Inicio | Datos Generales</h3>
+            <div class="content-cards">
+                <!-- cards -->
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Vendedores</h2>
+                        <span><i class="fa-solid fa-box-archive"></i> 2</span>
+                    </div>
+                    <div class="card-content">
+                        <i class="fa-solid fa-users-gear icon-v"></i>
+                    </div>
+                </div>
+                <!-- cards -->
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Clientes</h2>
+                        <span><i class="fa-solid fa-box-archive"></i> 26</span>
+                    </div>
+                    <div class="card-content">
+                        <i class="fa-solid fa-users icon-x"></i>
+                    </div>
+                </div>
+                <!-- cards -->
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Productos</h2>
+                        <span><i class="fa-solid fa-box-archive"></i> 11</span>
+                    </div>
+                    <div class="card-content">
+                        <i class='bx bx-store-alt icon-p' ></i> 
+                    </div>
+                </div>
+                <!-- cards -->
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Pedidos</h2>
+                        <span><i class="fa-solid fa-box-archive"></i> 18</span>
+                    </div>
+                    <div class="card-content">
+                        <i class="fa-regular fa-clipboard icon-b"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <div class="content-orders">
+            <h2>Ultimo Pedido Tomado</h2>
+            <div class="box-orders">
+                <h4>Informacion del Cliente</h4>
+                <div class="orders-content">
+                    <p>Nombre: Julia</p>
+                    <p>Apellido: Martinez</p>
+                    <p>Direccion: buenos aires GBA</p>
+                    <p>Telefono: +54 11 2868-5488</p>
+                    <p>Monto Total: $120.000</p>
+                    <span>Fecha: 1/10/2024</span>
+                </div>
+                <a href="#">Ver Pedido Del Cliente</a>
+            </div>
+        </div>
+
+        <section class="content-grafic">
+                <?php require_once "./grafica.php"?>
+        </section>
+
+    </section>
 
     <script src="https://kit.fontawesome.com/591b1de1f6.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
