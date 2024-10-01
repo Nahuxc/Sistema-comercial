@@ -1,7 +1,24 @@
 # Sistema Comercial
 
-## Estructura del proyecto
+## Estructura del proyecto Resumen
 - Maquetado de la web con HTML y CSS nativo.
+
+Menu de navegacion
+* armar una barra lateral de navegacion para el admin y empleados.
+* dropdown en productos y pedidos
+
+secciones
+* Clientes donde muestre la lista de clientes.
+* Productos debe mostrar los productos que hay su stock y precio individual.
+* Pedidos debe mostrar los pedidos a entregar/despachar.
+* Vendedores mostrar su historial de ventas y pedidos a tomar.
+
+Formularios
+* inicio de sesion y registro.
+* armado de pedido.
+* edicion de productos para su stock.
+* agregado de productos nuevos.
+* edicion de datos del perfil o configuracion
 
 - Patron de diseño MVC con PHP para manejar de una manera mas estructurada el proyecto.
 
