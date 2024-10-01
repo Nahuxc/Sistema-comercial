@@ -8,27 +8,27 @@
 - Crear un Diagrama de Base de datos en MySQL para conectarlo con el proyecto.
 
 ### Tareas a realizar:
-- Inicio de sesion y Registro de empleados.
+Inicio de sesion y Registro de empleados.
 
-- Roles entre los empleados y administrador de la plataforma
+Roles entre los empleados y administrador de la plataforma
 * roles a crear: vendedor, repartidor, Jefe.
 * cada rol debe cumplir una funcion y poder acceder a funciones distintas de la aplicacion.
 
-- secciones de productos:
+secciones de productos:
 * filtrado de categorias
 * filtrado por orden de cantidades
 * filtrado por fechas
 
-- Armado de Pedidos del cliente:
+Armado de Pedidos del cliente:
 * formulario para que el vendedor tome el pedido.
 * enviar los datos para el gestor de pedidos del dia.
 * impresion con PDF del pedido con la factura de cobro total y los productos con su precio individual.
 
-- Seccion de Vendedores:
+Seccion de Vendedores:
 * informacion de vendedores.
 * salario a cobrar por comisiones.
 
-- gestor de clientes:
+gestor de clientes:
 * informacion de clientes atendidos por los vendedores.
 * pedidos ordenados por los clientes.
 
