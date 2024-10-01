@@ -8,13 +8,13 @@
       function drawVisualization() {
         // Some raw data (not necessarily accurate)
         var data = google.visualization.arrayToDataTable([
-          ['Month', 'Bolivia', 'Ecuador'],
+          ['Month', 'Gastos Empresa', 'Compras De Clientes'],
           ['2004/05',  165,      938],
           ['2005/06',  135,      1120],
         ]);
 
         var options = {
-          title : 'Monthly Coffee Production by Country',
+          title : 'Analisis de gastos, ventas y compras',
           vAxis: {title: 'Cups'},
           hAxis: {title: 'Month'},
           seriesType: 'bars',

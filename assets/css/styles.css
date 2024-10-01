@@ -122,6 +122,7 @@ nav{
     height: 64px;
     padding: 0 20px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
 }
@@ -131,6 +132,7 @@ nav .toggle-sidebar{
     cursor: pointer;
 }
 
+/* search style */
 nav form{
     max-width: 400px;
     width: 100%;
@@ -154,8 +156,14 @@ nav .form-group input{
     border: none;
     outline: none;
     padding: 10px 36px 10px 16px;
+    transition: all .3 ease;
 }
 
+nav .form-group input:focus{
+    box-shadow: 0 0 0 1px #0379ef, 0 0 0 2px #0057bb;
+}
+
+/* notification style */
 nav .nav-link{
     position: relative;
 }
@@ -173,7 +181,7 @@ nav .nav-link .badge{
     height: 20px;
     border-radius: 50%;
     border: 2px solid rgb(238, 237, 237);
-    background: red;
+    background: rgb(251, 88, 88);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,16 +191,60 @@ nav .nav-link .badge{
 }
 
 
-.profile{
-    display: flex;
+nav .divider{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 12px;
+    display: block;
 }
 
-.profile-img{
+/* photo profile */
+
+nav .profile{
+    position: relative;
+}
+
+nav .profile .profile-img{
     width: 50px;
     height: 50px;
-    border-radius: 100%;
+    border-radius: 50%;
     object-fit: cover;
     object-position: center;
+    cursor: pointer;
+}
+
+
+nav .profile .profile-link{
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background-color: white;
+    padding: 10px 5px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.221);
+    border-radius: 5px;
+    width: 160px;
+    pointer-events: none;
+    opacity: 0;
+    transition: all .3s ease;
+}
+nav .profile .profile-link.show{
+    opacity: 1;
+    pointer-events: visible;
+    top: 100%;
+}
+
+
+nav .profile .profile-link a{
+    padding: 10px 16px;
+    display: flex;
+    gap: 6px;
+    font-size: 14px;
+    color: black;
+    align-items: center;
+}
+
+nav .profile .profile-link a:hover{
+    background-color: #d7d7d7;
 }
 
 
@@ -208,6 +260,7 @@ nav .nav-link .badge{
 .section-cards h3{
     font-size: 30px;
     background-color: white;
+    box-shadow: 0 0 5px rgb(159, 159, 159);
     text-align: center;
     padding: 5px;
     margin: 0px 80px;
@@ -223,7 +276,7 @@ nav .nav-link .badge{
     background-color: #ffffff;
     padding: 10px 50px;
     margin: 10px;
-    width: 345px;
+    width: 350px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -239,17 +292,18 @@ nav .nav-link .badge{
 }
 
 .card:nth-child(1){
-    box-shadow: 0 5px 0px #0798ff;
+    box-shadow: 0 5px 0px #0798ff, 0 0 5px rgb(159, 159, 159);
 }
 .card:nth-child(2){
-    box-shadow: 0 5px 0px #31a614;
+    box-shadow: 0 5px 0px #31a614, 0 0 5px rgb(159, 159, 159);
 }
 .card:nth-child(3){
-    box-shadow: 0 5px 0px #fc8700;
+    box-shadow: 0 5px 0px #fc8700, 0 0 5px rgb(159, 159, 159);
 }
 .card:nth-child(4){
-    box-shadow: 0 5px 0px #8e00fa;
+    box-shadow: 0 5px 0px #8e00fa, 0 0 5px rgb(159, 159, 159);
 }
+
 
 .card-content{
     font-size: 20px;
@@ -285,6 +339,7 @@ nav .nav-link .badge{
     margin: 20px 100px;
     padding: 20px;
     background-color: white;
+    box-shadow: 0 0 5px rgb(159, 159, 159);
 }
 
 .orders-content{
@@ -300,9 +355,9 @@ nav .nav-link .badge{
 }
 
 .orders-content p{
-    background-color: #212221;
+    background-color: #eaedea;
     padding: 5px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 10px 10px 10px 0px;
 }
 
@@ -314,9 +369,14 @@ nav .nav-link .badge{
 }
 
 .box-orders a{
-    background-color: #006dfa;
-    padding: 10px;
+    background-color: #69a6f5;
+    padding: 5px;
     color: white;
+    transition: all 500ms;
+}
+
+.box-orders a:hover{
+    background-color: #006eff;
 }
 
 
@@ -345,12 +405,12 @@ nav .nav-link .badge{
 .bar{
     width: 90%;
     margin: 10px auto;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(148, 148, 148);
     height: 5px;
 }
 .autor-copyright p {
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(171, 169, 169);
     margin-top: 20px;
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;

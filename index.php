@@ -50,11 +50,11 @@
                     <i class="bx bx-search"></i>
                 </div>
             </form>
+            <span class="divider"></span>
             <a href="#" class="nav-link">
                 <i class="bx bxs-bell icon"></i>
                 <span class="badge">0</span>
             </a>
-            <span class="divider"></span>
             <div class="profile">
                 <img class="profile-img" src="./assets/img/chico.png" alt="foto-perfil">
                 <ul class="profile-link">
