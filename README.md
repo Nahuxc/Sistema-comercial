@@ -1,5 +1,5 @@
 # Sistema Comercial
-Presentacion del Dashboard
+### Presentacion del Dashboard
 ![Alt text](./assets/img/sistema%20comercial.png)
 
 ## Estructura del proyecto Resumen
