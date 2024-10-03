@@ -1,4 +1,6 @@
 # Sistema Comercial
+Presentacion del Dashboard
+![Alt text](./assets/img/sistema%20comercial.png)
 
 ## Estructura del proyecto Resumen
 - Maquetado de la web con HTML y CSS nativo.
